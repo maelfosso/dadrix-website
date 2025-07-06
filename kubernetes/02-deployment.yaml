@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website
+  namespace: dadrix
+  labels:
+    tiers: website
+    name: website
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        tiers: website
+        name: website
+  spec:
+    containers:
+    - name: website
+      image: ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA}
+      ports:
+      - containerPort: 3000
+        requests:
+          cpu: "100m"
+          memory: "128Mi"
+        limits:
+          cpu: "200m"
+          memory: "256Mi"
