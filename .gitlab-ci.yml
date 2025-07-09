@@ -4,14 +4,13 @@ stages:
 
 build_image:
   stage: build
-  image: node:18-alpine
+  image: docker:24
   services:
     - docker:24-dind
   before_script:
-    - apk add --no-cache yarn  # Installe yarn si absent dans l'image
+    - apk add --no-cache yarn
   script:
     - yarn install --frozen-lockfile
-  script:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA .
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
