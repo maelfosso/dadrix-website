@@ -29,3 +29,15 @@ deploy_to_k8s:
     - kubectl apply -f kubernetes/03-ingress.yaml
   only:
     - main
+
+test_k8s_connection:
+  stage: deploy
+  image: bitnami/kubectl:latest
+  script:
+    - mkdir -p ~/.kube
+    - echo "$KUBE_CONFIG" > ~/.kube/config
+    - kubectl cluster-info  # Vérifie la connexion
+    - kubectl get nodes     # Liste les nœuds disponibles
+  only:
+    - main
+  
