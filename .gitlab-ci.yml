@@ -23,10 +23,15 @@ deploy_to_k8s:
     - echo "$KUBE_CONFIG" > ~/.kube/config
   script:
     - kubectl version --client
-    - kubectl apply -f kubernetes/00-namespace.yaml
-    - kubectl apply -f kubernetes/01-service.yaml
-    - envsubst < kubernetes/02-deployment.yaml | kubectl apply -f - 
-    - kubectl apply -f kubernetes/03-ingress.yaml
+    - kubectl create secret docker-registry gitlab-registry \
+      --docker-server=registry.gitlab.com \
+      --docker-username="$GITLAB_REGISTRY_USER" \
+      --docker-password="$GITLAB_REGISTRY_PASSWORD" \
+      -n dadrix --dry-run=client -o yaml | kubectl apply -f -
+    - kubectl apply -f kubernetes/01-namespace.yaml
+    - kubectl apply -f kubernetes/02-service.yaml
+    - envsubst < kubernetes/03-deployment.yaml | kubectl apply -f -
+    - kubectl apply -f kubernetes/04-ingress.yaml
   only:
     - main
 

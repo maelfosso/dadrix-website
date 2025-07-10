@@ -18,6 +18,8 @@ spec:
         tier: website
         app: website
     spec:
+      imagePullSecrets:
+      - name: gitlab-registry
       containers:
       - name: website
         image: ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA}
