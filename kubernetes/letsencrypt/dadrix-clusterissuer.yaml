@@ -1,0 +1,17 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-dadrix-prod
+spec:
+  acme:
+    # The ACME server URL for Let's Encrypt production.
+    # Use https://acme-staging-v02.api.letsencrypt.org/directory for testing to avoid rate limits!
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: mael.fosso@dadrix.com 
+    privateKeySecretRef:
+      name: letsencrypt-dadrix-prod-account-key
+    # Enable the HTTP-01 challenge type, which cert-manager will use to prove domain ownership.
+    solvers:
+    - http01:
+        ingress:
+          class: nginx

@@ -4,9 +4,16 @@ metadata:
   name: ingress
   namespace: dadrix
   annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: "letsencrypt-dadrix-prod"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - www.dadrix.com
+    secretName: dadrix-com-lts
   rules:
   - host: www.dadrix.com
     http:
@@ -18,3 +25,27 @@ spec:
             name: website
             port:
               number: 3000
+
+# MetalLB
+# kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/config/manifests/metallb-native.yaml
+# metallb-config.yaml => useful when the EXTERNAL IP Adress is not visbile
+# apiVersion: metallb.io/v1beta1
+# kind: IPAddressPool
+# metadata:
+#   name: primary-pool
+#   namespace: metallb-system # Or the namespace where you installed MetalLB
+# spec:
+#   addresses:
+#   - 194.163.181.100/32 # Use your server's specific IP as a /32 range
+# ---
+# apiVersion: metallb.io/v1beta1
+# kind: L2Advertisement
+# metadata:
+#   name: default-advertisement
+#   namespace: metallb-system
+# spec:
+#   ipAddressPools:
+#   - primary-pool
+#
+# kubectl apply -f metallb-config.yaml
+#
