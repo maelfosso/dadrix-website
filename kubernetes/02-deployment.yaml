@@ -4,24 +4,29 @@ metadata:
   name: website
   namespace: dadrix
   labels:
-    tiers: website
-    name: website
+    tier: website
+    app: website
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      tier: website
+      app: website
   template:
     metadata:
       labels:
-        tiers: website
-        name: website
-  spec:
-    containers:
-    - name: website
-      image: ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA}
-      ports:
-      - containerPort: 3000
-        requests:
-          cpu: "100m"
-          memory: "128Mi"
-        limits:
-          cpu: "200m"
-          memory: "256Mi"
+        tier: website
+        app: website
+    spec:
+      containers:
+      - name: website
+        image: ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA}
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "200m"
+            memory: "256Mi"

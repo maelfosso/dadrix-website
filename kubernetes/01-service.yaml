@@ -5,11 +5,11 @@ metadata:
   namespace: dadrix
   labels:
     tiers: website
-    name: website
+    app: website
 spec:
   selector:
     tiers: website
-    name: website
+    app: website
   ports:
   - protocol: TCP
     port: 3000
