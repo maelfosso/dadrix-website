@@ -17,7 +17,7 @@ build_image:
 
 deploy_to_k8s:
   stage: deploy
-  image: bitnami/kubectl:latest
+  image: alpine/k8s:1.26.10
   before_script:
     - mkdir -p ~/.kube
     - echo "$KUBE_CONFIG" > ~/.kube/config
