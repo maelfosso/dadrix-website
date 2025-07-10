@@ -4,11 +4,11 @@ metadata:
   name: website
   namespace: dadrix
   labels:
-    tiers: website
+    tier: website
     app: website
 spec:
   selector:
-    tiers: website
+    tier: website
     app: website
   ports:
   - protocol: TCP
