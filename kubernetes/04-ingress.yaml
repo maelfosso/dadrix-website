@@ -12,9 +12,20 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
+    - dadrix.com
     - www.dadrix.com
     secretName: dadrix-com-lts
   rules:
+  - host: dadrix.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: website
+            port:
+              number: 3000
   - host: www.dadrix.com
     http:
       paths:
