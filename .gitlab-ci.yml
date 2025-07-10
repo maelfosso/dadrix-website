@@ -32,7 +32,7 @@ deploy_to_k8s:
 
 test_k8s_connection:
   stage: deploy
-  image: bitnami/kubectl:latest
+  image: alpine/k8s:1.26.10
   script:
     - mkdir -p ~/.kube
     - echo "$KUBE_CONFIG" > ~/.kube/config
