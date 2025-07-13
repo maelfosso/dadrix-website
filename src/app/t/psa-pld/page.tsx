@@ -14,7 +14,14 @@ import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import flyerTraining from '@/images/t/psa-pld.png';
 import { Button } from '@/components/Button'
+import Link from 'next/link'
+import { Border } from '@/components/Border'
+import { SocialMedia } from '@/components/SocialMedia'
+import { useId } from 'react'
+import Image from 'next/image'
+import RegisterForm from './register'
 
 function CTARegister() {
   return (
@@ -280,6 +287,21 @@ function Values() {
   )
 }
 
+function Register() {
+  return (
+    <div className="relative mt-8 pt-8 sm:mt-8 sm:pt-8 lg:mt-8 lg:pt-8">
+      <SectionIntro
+          eyebrow=""
+          title="Rejoignez la formation"
+        ></SectionIntro>
+      <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <RegisterForm />
+      </Container>
+    </div>
+  )
+}
+
+
 export const metadata: Metadata = {
   title: 'Piloter son activité par les données',
   description:
@@ -312,7 +334,7 @@ export default function Process() {
 
       <Values />
 
-      {/* <ContactSection /> */}
+      <Register />
     </>
   )
 }
