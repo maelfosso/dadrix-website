@@ -1,6 +1,6 @@
 FROM node:18-alpine AS builder
 WORKDIR /app
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock ./prisma/schema.prisma ./
 RUN yarn install --frozen-lockfile
 COPY . .
 RUN yarn build
