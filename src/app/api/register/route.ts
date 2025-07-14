@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@/generated/prisma';
+// import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
@@ -21,6 +22,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true, data: registration }, { status: 201 })
   } catch (error) {
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 })
+    const errorMessage = error instanceof Error ? error.message : 'Une erreur inconnue est survenue'
+    return NextResponse.json({ success: false, error: errorMessage }, { status: 500 })
   }
 }
