@@ -27,7 +27,7 @@ function CTARegister() {
   return (
     <div className="mt-8 flex">
       <Button
-        href={'registration'}
+        href={'#registration'}
         aria-label={`Register`}
       >
         👉 Je m'incris à la formation
@@ -289,7 +289,7 @@ function Values() {
 
 function Register() {
   return (
-    <div className="relative mt-8 pt-8 sm:mt-8 sm:pt-8 lg:mt-8 lg:pt-8">
+    <div id='registration' className="relative mt-8 pt-8 sm:mt-8 sm:pt-8 lg:mt-8 lg:pt-8">
       <SectionIntro
           eyebrow=""
           title="Rejoignez la formation"
