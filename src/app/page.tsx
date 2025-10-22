@@ -190,6 +190,7 @@ export default async function Home() {
           <p className="mt-6 text-xl text-neutral-600">
             90% of data is never used. We’re here to fix that. DaDriX AI delivers end-to-end data solutions—engineering, science, and AI—to turn your unused data into your biggest asset.
           </p>
+          <h2>CBC - CSIPhoenix</h2>
         </FadeIn>
       </Container>
 
