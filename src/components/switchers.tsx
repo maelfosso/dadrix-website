@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter, usePathname } from 'next/navigation';
-import { useLocaleFromURL } from '@/hooks/use-locale-from-url';
+import { useLocaleFromCookie } from '@/hooks/use-locale-from-url';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 import {
@@ -10,17 +10,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { setLocale } from '@/app/actions';
 
 export function LanguageSwitcher() {
-  const router = useRouter();
   const pathname = usePathname();
-  const currentLocale = useLocaleFromURL();
-
-  const switchLocale = (locale: string) => {
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', locale);
-    router.push(url.toString());
-  };
+  const currentLocale = useLocaleFromCookie();
 
   return (
     <DropdownMenu>
@@ -30,10 +24,10 @@ export function LanguageSwitcher() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => switchLocale('en')}>
+        <DropdownMenuItem onClick={() => setLocale('en', pathname)}>
           English {currentLocale === 'en' && '✓'}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => switchLocale('fr')}>
+        <DropdownMenuItem onClick={() => setLocale('fr', pathname)}>
           Français {currentLocale === 'fr' && '✓'}
         </DropdownMenuItem>
       </DropdownMenuContent>

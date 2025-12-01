@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { NextIntlClientProvider } from 'next-intl';
 import './globals.css';
+import { cookies, headers } from 'next/headers';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -28,7 +29,9 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const messages = await getMessages(); // Récupère les traductions
+  // const locale = (await headers()).get('x-next-intl-locale') || 'en';
+  const locale = (await cookies()).get('NEXT_LOCALE')?.value || 'en';
+  const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -47,7 +50,6 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* Ajoutez ce provider */}
           <NextIntlClientProvider messages={messages}>
             {children}
           </NextIntlClientProvider>
