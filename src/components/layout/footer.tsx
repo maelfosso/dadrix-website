@@ -24,10 +24,10 @@ export function Footer() {
             <Link href="/our-services" className="text-muted-foreground hover:text-primary transition-colors">
               {t('footer.links.services')}
             </Link>
-            <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="https://pesoro.dadrix.com/" target='_blank' className="text-muted-foreground hover:text-primary transition-colors">
               {t('footer.links.pesoro')}
             </Link>
-            <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="https://podcast.dadrix.com/" target='_blank' className="text-muted-foreground hover:text-primary transition-colors">
               {t('footer.links.podcast')}
             </Link>
             <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">

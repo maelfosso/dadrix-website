@@ -32,10 +32,10 @@ export function Header() {
           <Link href="/our-services" className="text-muted-foreground hover:text-primary transition-colors">
             {t('header.nav.services')}
           </Link>
-          <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://pesoro.dadrix.com/" target='_blank' className="text-muted-foreground hover:text-primary transition-colors">
             {t('header.nav.pesoro')}
           </Link>
-          <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://podcast.dadrix.com/" target='_blank' className="text-muted-foreground hover:text-primary transition-colors">
             {t('header.nav.podcast')}
           </Link>
           <Link href="/about-us" className="text-muted-foreground hover:text-primary transition-colors">
