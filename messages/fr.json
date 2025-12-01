@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Transformer les données en valeur business",
+    "description": "DaDriX aide les entreprises avec l'IA et l'analyse de données à stimuler la croissance et l'innovation. Prenez des décisions plus intelligentes avec nos solutions expertes.",
+    "cta": "Obtenir une consultation gratuite"
+  },
+  "services": {
+    "title": "Nos services principaux",
+    "subtitle": "Nous fournissons des solutions complètes pour transformer vos données en un atout stratégique.",
+    "ai": {
+      "title": "IA & Machine Learning",
+      "description": "Débloquez des insights prédictifs et automatisez les processus avec nos modèles IA avancés."
+    },
+    "bi": {
+      "title": "Business Intelligence",
+      "description": "Visualisez vos données avec des tableaux de bord interactifs et des rapports pour des insights clairs et actionnables."
+    },
+    "strategy": {
+      "title": "Stratégie pilotée par les données",
+      "description": "Tirez parti de vos données pour construire des stratégies robustes qui atteignent vos objectifs commerciaux."
+    }
+  },
+  "products": {
+    "title": "Découvrez notre travail",
+    "subtitle": "Découvrez nos produits et nos idées qui façonnent l'avenir des données.",
+    "pesoro": {
+      "title": "Découvrir Pesoro",
+      "description": "Notre plateforme phare pour une intégration et une analyse de données transparentes. Révolutionnez votre flux de travail.",
+      "cta": "En savoir plus"
+    },
+    "podcast": {
+      "title": "Data Insights Radio",
+      "description": "Écoutez notre podcast pour des interviews d'experts et les dernières tendances en science des données et en IA.",
+      "cta": "Écouter maintenant"
+    }
+  },
+  "header": {
+    "logo": "DaDriX",
+    "nav": {
+      "services": "Services",
+      "pesoro": "Pesoro",
+      "podcast": "Podcast",
+      "about": "À propos",
+      "contact": "Contactez nous"
+    },
+    "cta": "Contactez-nous"
+  },
+  "footer": {
+    "copyright": "© 2024 DaDriX. Tous droits réservés.",
+    "links": {
+      "services": "Services",
+      "pesoro": "Pesoro",
+      "podcast": "Podcast",
+      "privacy": "Politique de confidentialité",
+      "tos": "Conditions d'utilisation"
+    }
+  }
+}
