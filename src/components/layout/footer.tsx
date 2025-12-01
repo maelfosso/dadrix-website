@@ -33,7 +33,7 @@ export function Footer() {
             <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
               {t('footer.links.privacy')}
             </Link>
-            <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/terms-of-service" className="text-muted-foreground hover:text-primary transition-colors">
               {t('footer.links.tos')}
             </Link>
           </div>

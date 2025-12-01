@@ -15,6 +15,7 @@ export function Logo({ className }: { className?: string }) {
 
   return (
     <motion.svg
+      suppressHydrationWarning
       variants={{ idle: {}, active: {} }}
       initial="idle"
       whileHover="active"
