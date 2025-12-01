@@ -1,11 +1,11 @@
 'use client';
 
-import { Logo } from '@/components/logo';
 import { ThemeSwitcher, LanguageSwitcher } from '@/components/switchers';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { useMounted } from '@/hooks/use-mounted';
+import { Logo } from '../logo';
 
 export function Header() {
   const t = useTranslations();
