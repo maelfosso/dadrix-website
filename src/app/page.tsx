@@ -1,9 +1,9 @@
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import type { Metadata } from 'next';
-import { HeroSection } from '@/components/home/hero-section';
-import { ServicesSection } from '@/components/home/service-section';
-import { ProductsSection } from '@/components/home/products-section';
+import HeroSection from '@/components/home/hero-section';
+import ServicesSection from '@/components/home/service-section';
+import WorkSection from '@/components/home/products-section';
 
 export const metadata: Metadata = {
   title: 'DaDriX - Data Driven Xolutions',
@@ -17,16 +17,15 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+
   return (
-    <div className="relative flex w-full flex-col font-display overflow-x-hidden">
+    <div className="min-h-screen flex flex-col font-display">
       <Header />
-      
-      <main className="w-full max-w-7xl mx-auto lg:px-8">
+      <main className="w-full max-w-7xl mx-auto lg:px-8 flex-grow">
         <HeroSection />
         <ServicesSection />
-        <ProductsSection />
+        <WorkSection />
       </main>
-
       <Footer />
     </div>
   );

@@ -33,7 +33,8 @@ deploy_to_k8s:
     - kubectl apply -f kubernetes/01-namespace.yaml
     - kubectl apply -f kubernetes/02-service.yaml
     - envsubst < kubernetes/03-deployment.yaml | kubectl apply -f -
-    - kubectl apply -f kubernetes/04-ingress.yaml
+    # - kubectl apply -f kubernetes/04-ingress.yaml
+    - kubectl apply -f kubernetes/05-gateway.yaml
     - sh kubernetes/letsencrypt/setup.sh
   only:
     - main

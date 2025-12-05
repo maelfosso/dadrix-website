@@ -1,274 +1,49 @@
 {
-  "hero": {
+  "home": {
     "title": "Transforming Data into Business Value",
     "description": "DaDriX empowers businesses with AI and data analytics to drive growth and innovation. Make smarter decisions with our expert solutions.",
-    "cta": "Get a Free Consultation"
-  },
-  "products": {
-    "title": "Explore Our Work",
-    "subtitle": "Discover our products and insights that are shaping the future of data.",
-    "pesoro": {
-      "title": "Discover Pesoro",
-      "description": "Our flagship platform for seamless data integration and analysis. Revolutionize your workflow.",
-      "cta": "Learn More"
-    },
-    "podcast": {
-      "title": "Les P'tits Data",
-      "description": "Tune into our podcast for expert interviews and the latest trends in data science and AI.",
-      "cta": "Listen Now"
-    }
-  },
-  "header": {
-    "logo": "DaDriX",
-    "nav": {
-      "services": "Services",
-      "pesoro": "Pesoro",
-      "podcast": "Podcast",
-      "about": "About Us",
-      "contact": "Contact Us"
-    },
-    "cta": "Get In Touch"
-  },
-  "footer": {
-    "copyright": "© 2025 DaDriX. All Rights Reserved.",
-    "links": {
-      "services": "Services",
-      "pesoro": "Pesoro",
-      "podcast": "Podcast",
-      "privacy": "Privacy Policy",
-      "tos": "Terms of services"
+    "getFreeConsultation": "Get a Free Consultation",
+    "work": {
+      "title": "Explore Our Work",
+      "description": "Discover our products and insights that are shaping the future of data.",
+      "pesoro": {
+        "title": "Discover Pesoro",
+        "description": "Our flagship platform for seamless data integration and analysis. Revolutionize your workflow."
+      },
+      "podcast": {
+        "title": "Data Insights Radio",
+        "description": "Tune into our podcast for expert interviews and the latest trends in data science and AI."
+      },
+      "learnMore": "Learn More",
+      "listenNow": "Listen Now"
     }
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "We provide end-to-end data solutions, empowering your business to make smarter, data-driven decisions and achieve sustainable growth.",
-    "training": {
-      "title": "Data Analysis Training",
-      "description": "Equip your team with the skills to turn data into actionable insights. Our hands-on training covers everything from fundamentals to advanced analytics techniques.",
-      "benefit1": "Upskill your workforce for a data-centric culture.",
-      "benefit2": "Customized curriculum tailored to your business needs.",
-      "benefit3": "Improve internal decision-making capabilities."
+    "title": "Our Core Services",
+    "description": "We provide comprehensive solutions to turn your data into a strategic asset.",
+    "ai": {
+      "title": "AI & Machine Learning",
+      "description": "Unlock predictive insights and automate processes with our advanced AI models."
     },
     "bi": {
-      "title": "BI System Development",
-      "description": "We design and build powerful Business Intelligence systems with interactive dashboards, providing you with real-time visibility into your key performance indicators.",
-      "benefit1": "Centralize your data for a single source of truth.",
-      "benefit2": "Gain clear, actionable insights through data visualization.",
-      "benefit3": "Monitor business performance effectively and efficiently."
-    },
-    "ml": {
-      "title": "Machine Learning Solutions",
-      "description": "Leverage our expertise to develop custom machine learning models that solve complex business problems, from predictive analytics to process automation.",
-      "benefit1": "Unlock predictive insights to anticipate market trends.",
-      "benefit2": "Increase operational efficiency through automation.",
-      "benefit3": "Create personalized customer experiences at scale."
-    },
-    "ai": {
-      "title": "AI System Development",
-      "description": "We build and integrate intelligent AI systems that can understand, learn, and adapt, transforming your business processes and creating new opportunities for innovation.",
-      "benefit1": "Drive innovation with cutting-edge AI capabilities.",
-      "benefit2": "Enhance product features with intelligent functions.",
-      "benefit3": "Gain a significant competitive advantage in your industry."
+      "title": "Business Intelligence",
+      "description": "Visualize your data with interactive dashboards and reporting for clear, actionable insights."
     },
     "strategy": {
       "title": "Data-Driven Strategy",
       "description": "Leverage your data to build robust strategies that achieve your business goals."
-    },
-    "cta": {
-      "title": "Ready to unlock your data's potential?",
-      "description": "Let's discuss how DaDriX can help you achieve your business goals. Schedule a free, no-obligation consultation with our experts today.",
-      "button": "Get a Free Consultation"
     }
   },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "We're here to help and answer any question you might have. We look forward to hearing from you.",
-    "form": {
-      "title": "Send us a Message",
-      "name": "Full Name",
-      "namePlaceholder": "John Doe",
-      "email": "Email Address",
-      "emailPlaceholder": "you@example.com",
-      "message": "Message",
-      "messagePlaceholder": "Your message...",
-      "submit": "Send Message"
-    },
-    "info": {
-      "title": "Contact Information",
-      "email": "Email",
-      "emailValue": "contact@dadrix.com",
-      "phone": "Phone",
-      "phoneValue": "+1 (234) 567-890",
-      "address": "Address",
-      "addressValue": "123 Data Drive, Analytics City, USA"
-    }
+  "header": {
+    "services": "Services",
+    "pesoro": "Pesoro",
+    "podcast": "Podcast",
+    "about": "About Us",
+    "getInTouch": "Get In Touch"
   },
-  "about": {
-    "title": "About DaDriX",
-    "subtitle": "We are a passionate team of data scientists, AI experts, and strategists dedicated to helping businesses unlock the power of their data.",
-    "mission": {
-      "title": "Our Mission",
-      "content": "To empower businesses of all sizes with cutting-edge data analysis and AI solutions, enabling them to make smarter, data-driven decisions that foster growth, innovation, and a competitive edge."
-    },
-    "vision": {
-      "title": "Our Vision",
-      "content": "To be the leading partner for companies seeking to transform their operations and strategy through the intelligent use of data, creating a future where every business decision is informed by insight."
-    },
-    "values": {
-      "title": "Our Core Values",
-      "innovation": {
-        "title": "Innovation",
-        "content": "We constantly explore new technologies and methodologies."
-      },
-      "integrity": {
-        "title": "Integrity",
-        "content": "We build trust through transparent and ethical practices."
-      },
-      "collaboration": {
-        "title": "Collaboration",
-        "content": "We work as a true partner to achieve shared success."
-      }
-    },
-    "story": {
-      "title": "Our Story",
-      "item1": {
-        "title": "2018 - The Beginning",
-        "content": "Founded by a group of data enthusiasts, DaDriX started with a mission to make data science accessible to all businesses."
-      },
-      "item2": {
-        "title": "2020 - First Major Client",
-        "content": "We partnered with a leading e-commerce platform, delivering a 30% increase in their sales through predictive analytics."
-      },
-      "item3": {
-        "title": "2022 - Launch of Pesoro",
-        "content": "Our flagship BI platform, Pesoro, was launched, revolutionizing how our clients interact with their data."
-      },
-      "item4": {
-        "title": "Today - Expanding Horizons",
-        "content": "We continue to grow, helping dozens of companies across various industries harness the power of AI and data."
-      }
-    },
-    "team": {
-      "title": "Meet Our Team",
-      "jane": {
-        "name": "Jane Doe",
-        "role": "CEO & Founder"
-      },
-      "john": {
-        "name": "John Smith",
-        "role": "Head of AI"
-      },
-      "emily": {
-        "name": "Emily White",
-        "role": "Lead Data Scientist"
-      }
-    },
-    "testimonials": {
-      "title": "The brilliant minds behind our success.",
-      "alex": {
-        "content": "\"DaDriX transformed our data strategy. Their insights led to a 25% increase in operational efficiency. A truly invaluable partner.\"",
-        "name": "Alex Johnson",
-        "role": "CTO, Innovate Inc."
-      },
-      "samantha": {
-        "content": "\"The machine learning models developed by DaDriX have revolutionized our customer targeting. We've seen a significant uplift in conversion rates.\"",
-        "name": "Samantha Lee",
-        "role": "Marketing Director, NextGen Retail"
-      }
-    },
-    "nav": {
-      "services": "Services",
-      "about": "About Us",
-      "contact": "Contact"
-    }
-  },
-  "privacy": {
-    "title": "Privacy Policy",
-    "lastUpdated": "Last Updated: October 26, 2025",
-    "intro": "DaDriX (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us. Please read this policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.",
-    "section1": {
-      "title": "1. Information We Collect",
-      "content": "We may collect information about you in a variety of ways. The information we may collect on the site includes:",
-      "personalData": "Personally identifiable information, such as your name, shipping address, email address, and telephone number, and demographic information, such as your age, gender, hometown, and interests, that you voluntarily give to us when you register with the site or when you choose to participate in various activities related to the site, such as online chat and message boards.",
-      "derivativeData": "Information our servers automatically collect when you access the site, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the site.",
-      "financialData": "Financial information, such as data related to your payment method (e.g., valid credit card number, card brand, expiration date) that we may collect when you purchase, order, return, exchange, or request information about our services from the site."
-    },
-    "section2": {
-      "title": "2. Use of Your Information",
-      "content": "Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the site to:",
-      "item1": "Create and manage your account.",
-      "item2": "Email you regarding your account or order.",
-      "item3": "Fulfill and manage purchases, orders, payments, and other transactions related to the site.",
-      "item4": "Improve our website, products, and services.",
-      "item5": "Notify you of updates to our services.",
-      "item6": "Offer new products, services, and/or recommendations to you.",
-      "item7": "Prevent fraudulent transactions, monitor against theft, and protect against criminal activity."
-    },
-    "section3": {
-      "title": "3. Disclosure of Your Information",
-      "content": "We may share information we have collected about you in certain situations. Your information may be disclosed as follows:",
-      "law": "If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation.",
-      "thirdParty": "We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance.",
-      "businessTransfers": "We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company."
-    },
-    "section4": {
-      "title": "4. Security of Your Information",
-      "content": "We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse."
-    },
-    "section5": {
-      "title": "5. Your Rights and Choices",
-      "content": "You have certain rights regarding the personal information we maintain about you. You may have the right to:",
-      "item1": "Access your personal information.",
-      "item2": "Request correction of your personal information if it is incomplete or inaccurate.",
-      "item3": "Request deletion of your personal information.",
-      "item4": "Object to the processing of your personal information."
-    },
-    "section6": {
-      "title": "6. Changes to This Privacy Policy",
-      "content": "We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last Updated\" date."
-    },
-    "section7": {
-      "title": "7. Contact Us",
-      "content": "If you have questions or comments about this Privacy Policy, please contact us at:",
-      "company": "DaDriX Inc.",
-      "address": "123 Data Drive, Analytics City, AC 12345",
-      "email": "privacy@dadrix.com"
-    }
-  },
-  "tos": {
-    "title": "Terms of Service",
-    "lastUpdated": "Last updated: October 26, 2025",
-    "section1": {
-      "title": "1. Introduction",
-      "content": "Welcome to DaDriX. These Terms of Service (\"Terms\") govern your use of our website and services. By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services."
-    },
-    "section2": {
-      "title": "2. Use of Our Services",
-      "content": "You may use our services only in compliance with these Terms and all applicable laws. You agree not to misuse our services. For example, you must not interfere with our services or try to access them using a method other than the interface and the instructions that we provide."
-    },
-    "section3": {
-      "title": "3. Intellectual Property",
-      "content": "All content on our website, including text, graphics, logos, and software, is the property of DaDriX or its licensors and is protected by copyright and other intellectual property laws. You may not use any content from our site without our express written permission."
-    },
-    "section4": {
-      "title": "4. Confidentiality",
-      "content": "Any data or information provided to us by you in connection with our services will be treated as confidential. We will not disclose this information to any third party without your consent, except as required by law."
-    },
-    "section5": {
-      "title": "5. Limitation of Liability",
-      "content": "To the fullest extent permitted by law, DaDriX shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your access to or use of our services."
-    },
-    "section6": {
-      "title": "6. Changes to Terms",
-      "content": "We may modify these Terms at any time. We will post the most current version of these Terms on our website. By continuing to use our services after the changes have been made, you agree to be bound by the revised Terms."
-    },
-    "section7": {
-      "title": "7. Governing Law",
-      "content": "These Terms are governed by and construed in accordance with the laws of the jurisdiction in which DaDriX is located, without regard to its conflict of law principles."
-    },
-    "section8": {
-      "title": "8. Contact Us",
-      "content": "If you have any questions about these Terms, please contact us at:"
-    }
+  "footer": {
+    "rights": "© 2024 DaDriX. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

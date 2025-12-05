@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 import { Space_Grotesk, Poppins } from 'next/font/google';
-import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { NextIntlClientProvider } from 'next-intl';
-import './globals.css';
 import { cookies, headers } from 'next/headers';
+import './globals.css';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -29,7 +28,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const locale = (await headers()).get('x-next-intl-locale') || 'en';
   const locale = (await cookies()).get('NEXT_LOCALE')?.value || 'en';
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
@@ -41,14 +39,13 @@ export default async function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body
+      <body        
         className={`${spaceGrotesk.variable} ${poppins.variable} font-sans antialiased`}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
             {children}

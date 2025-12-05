@@ -1,57 +1,55 @@
 'use client';
 
-import { ThemeSwitcher, LanguageSwitcher } from '@/components/switchers';
-import { Button } from '@/components/ui/button';
-import { Link } from '@/i18n/routing';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { useMounted } from '@/hooks/use-mounted';
-import { Logo } from '../logo';
+import { ThemeSwitcher } from '@/components/theme-switcher';
+import { LangSwitcher } from '@/components/lang-switcher';
 
 export function Header() {
-  const t = useTranslations();
-  const mounted = useMounted();
-
-  // Évitez le rendu du contenu client avant le montage
-  if (!mounted) {
-    return <header className="sticky top-0 z-20 w-full h-16 border-b bg-background/80 backdrop-blur-sm" />;
-  }
+  const t = useTranslations('header');
 
   return (
-    <header className="sticky top-0 z-20 w-full bg-background/80 dark:bg-background/80 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-black/10 dark:border-white/10">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+        {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-            <Logo className="h-8 w-auto" />
+            D
           </div>
-          <Link href="/" className="text-foreground text-xl font-bold leading-tight tracking-[-0.015em] hover:opacity-80">
+          <h2 className="text-text-primary dark:text-white text-xl font-bold">
             DaDriX
-          </Link>
+          </h2>
         </div>
-
+        
+        {/* Navigation */}
         <nav className="hidden lg:flex items-center gap-6">
-          <Link href="/our-services" className="text-muted-foreground hover:text-primary transition-colors">
-            {t('header.nav.services')}
+          <Link href="/services" className="text-text-secondary dark:text-white/80 hover:text-primary dark:hover:text-white text-base font-medium transition-colors">
+            {t('services')}
           </Link>
-          <Link href="https://pesoro.dadrix.com/" target='_blank' className="text-muted-foreground hover:text-primary transition-colors">
-            {t('header.nav.pesoro')}
+          <Link href="/pesoro" className="text-text-secondary dark:text-white/80 hover:text-primary dark:hover:text-white text-base font-medium transition-colors">
+            {t('pesoro')}
           </Link>
-          <Link href="https://podcast.dadrix.com/" target='_blank' className="text-muted-foreground hover:text-primary transition-colors">
-            {t('header.nav.podcast')}
+          <Link href="/podcast" className="text-text-secondary dark:text-white/80 hover:text-primary dark:hover:text-white text-base font-medium transition-colors">
+            {t('podcast')}
           </Link>
-          <Link href="/about-us" className="text-muted-foreground hover:text-primary transition-colors">
-            {t('header.nav.about')}
+          <Link href="/about" className="text-text-secondary dark:text-white/80 hover:text-primary dark:hover:text-white text-base font-medium transition-colors">
+            {t('about')}
           </Link>
         </nav>
 
+        {/* Switchers */}
         <div className="flex items-center gap-2">
+          <LangSwitcher />
           <ThemeSwitcher />
-          <LanguageSwitcher />
-          <Link href="/contact-us">
-            <Button size="sm" className="hidden lg:flex">
-              {t('header.nav.contact')}
-            </Button>
+          
+          <Link
+            href="/contact"
+            className="hidden lg:flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:opacity-90 transition-opacity"
+          >
+            {t('getInTouch')}
           </Link>
-          <button className="flex lg:hidden max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-foreground gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+          
+          <button className="flex lg:hidden items-center justify-center rounded-lg h-12 bg-transparent text-text-primary dark:text-white gap-2 text-base font-bold min-w-0 p-0">
             <span className="material-symbols-outlined">menu</span>
           </button>
         </div>

@@ -1,274 +1,49 @@
 {
-  "hero": {
-    "title": "Transformer les données en valeur business",
-    "description": "DaDriX aide les entreprises avec l'IA et l'analyse de données à stimuler la croissance et l'innovation. Prenez des décisions plus intelligentes avec nos solutions expertes.",
-    "cta": "Obtenir une consultation gratuite"
-  },
-  "products": {
-    "title": "Découvrez notre travail",
-    "subtitle": "Découvrez nos produits et nos idées qui façonnent l'avenir des données.",
-    "pesoro": {
-      "title": "Découvrir Pesoro",
-      "description": "Notre plateforme phare pour une intégration et une analyse de données transparentes. Révolutionnez votre flux de travail.",
-      "cta": "En savoir plus"
-    },
-    "podcast": {
-      "title": "Les P'tits Data",
-      "description": "Écoutez notre podcast pour des interviews d'experts et les dernières tendances en science des données et en IA.",
-      "cta": "Écouter maintenant"
-    }
-  },
-  "header": {
-    "logo": "DaDriX",
-    "nav": {
-      "services": "Services",
-      "pesoro": "Pesoro",
-      "podcast": "Podcast",
-      "about": "À propos",
-      "contact": "Contactez nous"
-    },
-    "cta": "Contactez-nous"
-  },
-  "footer": {
-    "copyright": "© 2025 DaDriX. Tous droits réservés.",
-    "links": {
-      "services": "Services",
-      "pesoro": "Pesoro",
-      "podcast": "Podcast",
-      "privacy": "Politique de confidentialité",
-      "tos": "Conditions d'utilisation"
+  "home": {
+    "title": "Transformer les Données en Valeur Ajoutée",
+    "description": "DaDriX accompagne les entreprises avec l'IA et l'analytique de données pour stimuler la croissance et l'innovation. Prenez des décisions plus intelligentes avec nos solutions expertes.",
+    "getFreeConsultation": "Obtenir une Consultation Gratuite",
+    "work": {
+      "title": "Découvrez Nos Réalisations",
+      "description": "Découvrez nos produits et nos idées qui façonnent l'avenir de la data.",
+      "pesoro": {
+        "title": "Découvrez Pesoro",
+        "description": "Notre plateforme phare pour une intégration et une analyse de données transparentes. Révolutionnez votre flux de travail."
+      },
+      "podcast": {
+        "title": "Data Insights Radio",
+        "description": "Écoutez notre podcast pour des interviews d'experts et les dernières tendances en data science et IA."
+      },
+      "learnMore": "En Savoir Plus",
+      "listenNow": "Écouter"
     }
   },
   "services": {
-    "title": "Nos Services",
-    "subtitle": "Nous fournissons des solutions de bout en bout pour vous permettre de prendre des décisions plus intelligentes basées sur les données et d'atteindre une croissance durable.",
-    "training": {
-      "title": "Formation à l'analyse de données",
-      "description": "Dotez votre équipe des compétences nécessaires pour transformer les données en insights actionnables. Notre formation pratique couvre tout, des fondamentaux aux techniques avancées d'analyse.",
-      "benefit1": "Développez les compétences de votre équipe pour une culture centrée sur les données.",
-      "benefit2": "Programme personnalisé adapté aux besoins de votre entreprise.",
-      "benefit3": "Améliorez les capacités de prise de décision interne."
+    "title": "Nos Services Principaux",
+    "description": "Nous fournissons des solutions complètes pour transformer vos données en un atout stratégique.",
+    "ai": {
+      "title": "IA & Machine Learning",
+      "description": "Débloquez des prédictions et automatisez les processus avec nos modèles IA avancés."
     },
     "bi": {
-      "title": "Développement de systèmes BI",
-      "description": "Nous concevons et construisons des systèmes de Business Intelligence puissants avec des tableaux de bord interactifs, vous offrant une visibilité en temps réel sur vos indicateurs clés de performance.",
-      "benefit1": "Centralisez vos données pour une source unique de vérité.",
-      "benefit2": "Obtenez des insights clairs et actionnables grâce à la visualisation des données.",
-      "benefit3": "Surveillez la performance de votre entreprise efficacement."
-    },
-    "ml": {
-      "title": "Solutions de Machine Learning",
-      "description": "Tirez parti de notre expertise pour développer des modèles de machine learning personnalisés qui résolvent des problèmes commerciaux complexes, de l'analyse prédictive à l'automatisation des processus.",
-      "benefit1": "Débloquez des insights prédictifs pour anticiper les tendances du marché.",
-      "benefit2": "Augmentez l'efficacité opérationnelle grâce à l'automatisation.",
-      "benefit3": "Créez des expériences client personnalisées à grande échelle."
-    },
-    "ai": {
-      "title": "Développement de systèmes IA",
-      "description": "Nous construisons et intégrons des systèmes IA intelligents qui peuvent comprendre, apprendre et s'adapter, transformant vos processus métier et créant de nouvelles opportunités d'innovation.",
-      "benefit1": "Innovez avec des capacités IA de pointe.",
-      "benefit2": "Améliorez les fonctionnalités de vos produits avec des fonctions intelligentes.",
-      "benefit3": "Obtenez un avantage concurrentiel significatif dans votre industrie."
+      "title": "Business Intelligence",
+      "description": "Visualisez vos données avec des tableaux de bord interactifs pour des insights clairs et exploitables."
     },
     "strategy": {
-      "title": "Stratégie pilotée par les données",
-      "description": "Tirez parti de vos données pour construire des stratégies robustes qui atteignent vos objectifs commerciaux."
-    },
-    "cta": {
-      "title": "Prêt à libérer le potentiel de vos données ?",
-      "description": "Discutons de la manière dont DaDriX peut vous aider à atteindre vos objectifs commerciaux. Planifiez une consultation gratuite et sans engagement avec nos experts aujourd'hui.",
-      "button": "Obtenir une consultation gratuite"
+      "title": "Stratégie Data-Driven",
+      "description": "Tirez parti de vos données pour construire des stratégies robustes qui atteignent vos objectifs."
     }
   },
-  "contact": {
-    "title": "Contactez-nous",
-    "subtitle": "Nous sommes là pour vous aider et répondre à toutes vos questions. Nous avons hâte de vous entendre.",
-    "form": {
-      "title": "Envoyez-nous un message",
-      "name": "Nom complet",
-      "namePlaceholder": "Jean Dupont",
-      "email": "Adresse e-mail",
-      "emailPlaceholder": "vous@exemple.com",
-      "message": "Message",
-      "messagePlaceholder": "Votre message...",
-      "submit": "Envoyer le message"
-    },
-    "info": {
-      "title": "Informations de contact",
-      "email": "E-mail",
-      "emailValue": "contact@dadrix.com",
-      "phone": "Téléphone",
-      "phoneValue": "+1 (234) 567-890",
-      "address": "Adresse",
-      "addressValue": "123 Data Drive, Analytics City, USA"
-    }
+  "header": {
+    "services": "Services",
+    "pesoro": "Pesoro",
+    "podcast": "Podcast",
+    "about": "À Propos",
+    "getInTouch": "Contactez-nous"
   },
-  "about": {
-    "title": "À propos de DaDriX",
-    "subtitle": "Nous sommes une équipe passionnée de scientifiques des données, d'experts en IA et de stratégues dédiés à aider les entreprises à libérer le pouvoir de leurs données.",
-    "mission": {
-      "title": "Notre Mission",
-      "content": "Rendre les entreprises de toutes tailles autonomes grâce à des solutions d'analyse de données et d'IA de pointe, leur permettant de prendre des décisions plus intelligentes basées sur les données qui favorisent la croissance, l'innovation et un avantage concurrentiel."
-    },
-    "vision": {
-      "title": "Notre Vision",
-      "content": "Être le partenaire de référence pour les entreprises cherchant à transformer leurs opérations et leur stratégie grâce à l'utilisation intelligente des données, créant un avenir où chaque décision commerciale est éclairée par des insights."
-    },
-    "values": {
-      "title": "Nos Valeurs Fondamentales",
-      "innovation": {
-        "title": "Innovation",
-        "content": "Nous explorons constamment de nouvelles technologies et méthodologies."
-      },
-      "integrity": {
-        "title": "Intégrité",
-        "content": "Nous bâtissons la confiance grâce à des pratiques transparentes et éthiques."
-      },
-      "collaboration": {
-        "title": "Collaboration",
-        "content": "Nous travaillons comme un véritable partenaire pour atteindre le succès partagé."
-      }
-    },
-    "story": {
-      "title": "Notre Histoire",
-      "item1": {
-        "title": "2018 - Le Début",
-        "content": "Fondée par un groupe d'enthousiastes des données, DaDriX a démarré avec une mission de rendre la science des données accessible à toutes les entreprises."
-      },
-      "item2": {
-        "title": "2020 - Premier Client Majeur",
-        "content": "Nous nous sommes associés à une plateforme e-commerce leader, augmentant leurs ventes de 30% grâce à l'analytique prédictive."
-      },
-      "item3": {
-        "title": "2022 - Lancement de Pesoro",
-        "content": "Notre plateforme BI phare, Pesoro, a été lancée, révolutionnant la manière dont nos clients interagissent avec leurs données."
-      },
-      "item4": {
-        "title": "Aujourd'hui - Expansion des Horizons",
-        "content": "Nous continuons à croître, aidant des dizaines d'entreprises dans divers secteurs à exploiter le pouvoir de l'IA et des données."
-      }
-    },
-    "team": {
-      "title": "Rencontrez Notre Équipe",
-      "jane": {
-        "name": "Jane Doe",
-        "role": "PDG & Fondatrice"
-      },
-      "john": {
-        "name": "John Smith",
-        "role": "Responsable IA"
-      },
-      "emily": {
-        "name": "Emily White",
-        "role": "Lead Data Scientist"
-      }
-    },
-    "testimonials": {
-      "title": "Les esprits brillants derrière notre succès.",
-      "alex": {
-        "content": "\"DaDriX a transformé notre stratégie de données. Leurs insights ont conduit à une augmentation de 25% de l'efficacité opérationnelle. Un partenaire véritablement inestimable.\"",
-        "name": "Alex Johnson",
-        "role": "CTO, Innovate Inc."
-      },
-      "samantha": {
-        "content": "\"Les modèles de machine learning développés par DaDriX ont révolutionné notre ciblage client. Nous avons vu une augmentation significative des taux de conversion.\"",
-        "name": "Samantha Lee",
-        "role": "Directrice Marketing, NextGen Retail"
-      }
-    },
-    "nav": {
-      "services": "Services",
-      "about": "À propos",
-      "contact": "Contact"
-    }
-  },
-  "privacy": {
-    "title": "Politique de confidentialité",
-    "lastUpdated": "Dernière mise à jour : 26 octobre 2025",
-    "intro": "DaDriX (\"nous\", \"notre\" ou \"la société\") s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web, utilisez nos services ou interagissez avec nous. Veuillez lire attentivement cette politique. Si vous n'êtes pas d'accord avec les termes de cette politique de confidentialité, veuillez ne pas accéder au site.",
-    "section1": {
-      "title": "1. Informations que nous collectons",
-      "content": "Nous pouvons collecter des informations vous concernant de diverses manières. Les informations que nous pouvons collecter sur le site incluent :",
-      "personalData": "Informations personnellement identifiables, telles que votre nom, adresse de livraison, adresse e-mail et numéro de téléphone, ainsi que des informations démographiques, telles que votre âge, sexe, ville d'origine et centres d'intérêt, que vous nous fournissez volontairement lors de votre inscription sur le site ou lorsque vous choisissez de participer à diverses activités liées au site, telles que des chats en ligne et des forums de discussion.",
-      "derivativeData": "Informations que nos serveurs collectent automatiquement lorsque vous accédez au site, telles que votre adresse IP, votre type de navigateur, votre système d'exploitation, vos heures de connexion et les pages que vous avez consultées immédiatement avant et après avoir accédé au site.",
-      "financialData": "Informations financières, telles que les données relatives à votre mode de paiement (par exemple, numéro de carte de crédit valide, marque de carte, date d'expiration) que nous pouvons collecter lorsque vous achetez, commandez, retournez, échangez ou demandez des informations sur nos services sur le site."
-    },
-    "section2": {
-      "title": "2. Utilisation de vos informations",
-      "content": "Disposer d'informations précises sur vous nous permet de vous offrir une expérience fluide, efficace et personnalisée. Plus précisément, nous pouvons utiliser les informations collectées sur vous via le site pour :",
-      "item1": "Créer et gérer votre compte.",
-      "item2": "Vous envoyer des e-mails concernant votre compte ou votre commande.",
-      "item3": "Exécuter et gérer les achats, commandes, paiements et autres transactions liées au site.",
-      "item4": "Améliorer notre site web, nos produits et services.",
-      "item5": "Vous informer des mises à jour de nos services.",
-      "item6": "Vous proposer de nouveaux produits, services et/ou recommandations.",
-      "item7": "Empêcher les transactions frauduleuses, surveiller contre le vol et protéger contre les activités criminelles."
-    },
-    "section3": {
-      "title": "3. Divulgation de vos informations",
-      "content": "Nous pouvons partager les informations que nous avons collectées sur vous dans certaines situations. Vos informations peuvent être divulguées comme suit :",
-      "law": "Si nous estimons que la diffusion d'informations vous concernant est nécessaire pour répondre à une procédure légale, pour enquêter ou remédier à des violations potentielles de nos politiques, ou pour protéger les droits, la propriété et la sécurité d'autrui, nous pouvons partager vos informations comme permis ou requis par toute loi, règle ou réglementation applicable.",
-      "thirdParty": "Nous pouvons partager vos informations avec des tiers qui effectuent des services pour nous ou en notre nom, y compris le traitement des paiements, l'analyse de données, la livraison d'e-mails, les services d'hébergement, le service client et l'assistance marketing.",
-      "businessTransfers": "Nous pouvons partager ou transférer vos informations dans le cadre de, ou lors des négociations de, toute fusion, vente d'actifs de la société, financement ou acquisition de tout ou partie de nos activités à une autre entreprise."
-    },
-    "section4": {
-      "title": "4. Sécurité de vos informations",
-      "content": "Nous utilisons des mesures de sécurité administratives, techniques et physiques pour aider à protéger vos informations personnelles. Bien que nous ayons pris des mesures raisonnables pour sécuriser les informations personnelles que vous nous fournissez, veuillez noter que mal nos efforts, aucune mesure de sécurité n'est parfaite ou impénétrable, et aucune méthode de transmission de données ne peut être garantie contre toute interception ou autre type d'utilisation abusive."
-    },
-    "section5": {
-      "title": "5. Vos droits et choix",
-      "content": "Vous avez certains droits concernant les informations personnelles que nous maintenons à votre sujet. Vous pouvez avoir le droit de :",
-      "item1": "Accéder à vos informations personnelles.",
-      "item2": "Demander la correction de vos informations personnelles si elles sont incomplètes ou inexactes.",
-      "item3": "Demander la suppression de vos informations personnelles.",
-      "item4": "Vous opposer au traitement de vos informations personnelles."
-    },
-    "section6": {
-      "title": "6. Modifications de cette politique de confidentialité",
-      "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre afin de refléter, par exemple, des modifications de nos pratiques ou pour d'autres raisons opérationnelles, légales ou réglementaires. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page et en mettant à jour la date \"Dernière mise à jour\"."
-    },
-    "section7": {
-      "title": "7. Contactez-nous",
-      "content": "Si vous avez des questions ou des commentaires sur cette politique de confidentialité, veuillez nous contacter à :",
-      "company": "DaDriX Inc.",
-      "address": "123 Data Drive, Analytics City, AC 12345",
-      "email": "privacy@dadrix.com"
-    }
-  },
-  "tos": {
-    "title": "Conditions d'utilisation",
-    "lastUpdated": "Dernière mise à jour : 26 octobre 2025",
-    "section1": {
-      "title": "1. Introduction",
-      "content": "Bienvenue sur DaDriX. Ces conditions d'utilisation (\"Conditions\") régissent votre utilisation de notre site web et de nos services. En accédant à notre site web ou en utilisant nos services, vous acceptez d'être lié par ces Conditions. Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser nos services."
-    },
-    "section2": {
-      "title": "2. Utilisation de nos services",
-      "content": "Vous ne pouvez utiliser nos services que conformément à ces Conditions et à toutes les lois applicables. Vous acceptez de ne pas utiliser indûment nos services. Par exemple, vous ne devez pas interférer avec nos services ou tenter d'y accéder par une méthode autre que l'interface et les instructions que nous fournissons."
-    },
-    "section3": {
-      "title": "3. Propriété intellectuelle",
-      "content": "Tout le contenu de notre site web, y compris les textes, graphiques, logos et logiciels, est la propriété de DaDriX ou de ses concedants de licence et est protégé par les lois sur le droit d'auteur et autres lois sur la propriété intellectuelle. Vous ne pouvez pas utiliser le contenu de notre site sans notre permission expresse écrite."
-    },
-    "section4": {
-      "title": "4. Confidentialité",
-      "content": "Toute donnée ou information que vous nous fournissez en rapport avec nos services sera traitée comme confidentielle. Nous ne divulguerons pas ces informations à un tiers sans votre consentement, sauf si la loi l'exige."
-    },
-    "section5": {
-      "title": "5. Limitation de responsabilité",
-      "content": "Dans toute la mesure permise par la loi, DaDriX ne sera pas responsable de tout dommage indirect, accessoire, spécial, consécutif ou punitif, ou de toute perte de profits ou de revenus, qu'ils soient encourus directement ou indirectement, ou de toute perte de données, d'utilisation, de clientèle ou d'autres pertes intangibles, résultant de votre accès ou de votre utilisation de nos services."
-    },
-    "section6": {
-      "title": "6. Modifications des conditions",
-      "content": "Nous pouvons modifier ces conditions à tout moment. Nous publierons la version la plus actuelle de ces conditions sur notre site web. En continuant à utiliser nos services après que les modifications ont été apportées, vous acceptez d'être lié par les conditions révisées."
-    },
-    "section7": {
-      "title": "7. Loi applicable",
-      "content": "Ces conditions sont régies par et interprétées conformément aux lois de la juridiction dans laquelle DaDriX est située, sans égard à ses principes de conflit de lois."
-    },
-    "section8": {
-      "title": "8. Contactez-nous",
-      "content": "Si vous avez des questions sur ces conditions, veuillez nous contacter à :"
-    }
+  "footer": {
+    "rights": "© 2024 DaDriX. Tous Droits Réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
   }
 }

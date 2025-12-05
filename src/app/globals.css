@@ -2,8 +2,11 @@
 
 @layer base {
   :root {
+    /* --background: 0 0% 100%;
+    --card: 0 0% 100%; */
+
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* --foreground: 222.2 84% 4.9%; */
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
@@ -26,7 +29,7 @@
 
   .dark {
     --background: 240 20% 7%;
-    --foreground: 210 40% 98%;
+    /* --foreground: 210 40% 98%; */
     --card: 240 15% 10%;
     --card-foreground: 210 40% 98%;
     --popover: 240 15% 10%;
@@ -53,5 +56,21 @@
   }
   body {
     @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+  }
+}
+
+
+@layer components {
+  .bg-card {
+    @apply bg-[hsl(var(--card))];
+  }
+  .border-card {
+    @apply border-[hsl(var(--border))];
+  }
+  .text-card-foreground {
+    @apply text-[hsl(var(--card-foreground))];
+  }
+  .text-secondary {
+    @apply text-[hsl(var(--text-secondary))];
   }
 }

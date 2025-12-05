@@ -1,0 +1,74 @@
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dadrix-certificate
+  namespace: dadrix
+spec:
+  secretName: dadrix-tls-secret
+  issuerRef:
+    name: letsencrypt-dadrix-prod
+    kind: ClusterIssuer
+  dnsNames:
+  - www.dadrix.com
+  - dadrix.com
+  duration: 2160h
+  renewBefore: 360h
+---
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: ReferenceGrant
+metadata:
+  name: allow-gateway-to-dadrix-tls
+  namespace: dadrix
+spec:
+  from:
+  - group: gateway.networking.k8s.io
+    kind: Gateway
+    namespace: default
+  to:
+  - group: ""
+    kind: Secret
+    name: dadrix-tls-secret
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: dadrix-website
+  namespace: dadrix
+spec:
+  parentRefs:
+  - name: dadrix-gateway
+    namespace: default
+    sectionName: https-wildcard
+  hostnames:
+  - dadrix.com
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: website
+      port: 3000
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: ingress-www-dadrix-com
+  namespace: dadrix
+spec:
+  hostnames:
+  - www.dadrix.com
+  parentRefs:
+  - name: dadrix-gateway
+    namespace: default
+    sectionName: http-wildcard
+  rules:
+  - backendRefs:
+    - name: website
+      port: 3000
+    matches:
+    - path:
+        type: PathPrefix
+        value: /
